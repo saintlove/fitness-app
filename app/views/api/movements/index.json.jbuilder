@@ -1,0 +1,1 @@
+json.array! @movements, partial: "movement", as: :movement

@@ -1,0 +1,1 @@
+json.partial! @equipment_connection, partial: "equipment_connection", as: :equipment_connection

@@ -1,0 +1,1 @@
+json.array! @equipment_connections, partial: "equipment_connection", as: :equipment_connection

@@ -1,0 +1,1 @@
+json.array! @muscle_groups, partial: "muscle_group", as: :muscle_group
