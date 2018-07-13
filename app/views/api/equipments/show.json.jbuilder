@@ -1,1 +1,2 @@
-json.partial! @equipment, partial: "equipment", as: :equipment
+json.id @equipment.id
+json.name @equipment.name

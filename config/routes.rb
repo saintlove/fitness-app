@@ -20,11 +20,11 @@ Rails.application.routes.draw do
       delete '/musclegroups/:id' => 'muscle_groups#destroy'
 
       #equipments Controller
-      get '/equipment' =>'equipments#index'
-      get '/equipment/:id' => 'equipments#show'
-      post '/equipment' => 'equipments#create'
-      patch '/equipment/:id' => 'equipments#update'
-      delete '/equipment/:id' => 'equipments#destroy'
+      get '/equipments' =>'equipments#index'
+      get '/equipments/:id' => 'equipments#show'
+      post '/equipments' => 'equipments#create'
+      patch '/equipments/:id' => 'equipments#update'
+      delete '/equipments/:id' => 'equipments#destroy'
 
       #movements Controller
       get '/movements' =>'movements#index'
