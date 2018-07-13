@@ -31,18 +31,22 @@ var EquipmentIndexPage = {
         this.equipments = response.data;
     }.bind(this));
   },
-    methods: {
-              requestExercises: function() {
-                var clientParams = {checked: this.checkedEquipment};
-                axios
-                .get("/api/exercises", clientParams)
-                .then(function(response) {
-                  this.exercises = response.data;
-                }.bind(this)); 
+  methods: {
+    requestExercises: function() {
+      // var clientParams = {checked: this.checkedEquipment};
 
-                }           
-    },
-    computed:{}
+      axios
+      .get("/api/exercises", {
+        params: {
+          checked: this.checkedEquipment
+        }
+      })
+      .then(function(response) {
+        this.exercises = response.data;
+      }.bind(this)); 
+      }           
+  },
+  computed:{}
   };
 
 var EquipmentShowPage = {

@@ -1,6 +1,12 @@
 class Api::ExercisesController < ApplicationController
   def index
-    @exercises = Exercise.all
+    if params[:checked]
+
+      @exercises = Exercise.find_checked(params[:checked])
+
+    else
+      @exercises = Exercise.all
+    end
     render 'index.json.jbuilder'
   end  
 
